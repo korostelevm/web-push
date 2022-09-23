@@ -140,3 +140,4 @@ reports/data
 junit.xml
 .ipynb_checkpoints/
 bin/*.csv
+.data
