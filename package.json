@@ -1,0 +1,33 @@
+{
+    "name": "codelab-notifications-push-server",
+    "version": "0.0.1",
+    "description": "Codelab: Build a push notifications server",
+    "main": "server.js",
+    "scripts": {
+        "dev": "nodemon server.js",
+        "clean": "[ -e .data/db.json ] && rm .data/db.json",
+        "start": "npm run clean; node server.js;"
+    },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "express": "^4.16.4",
+        "express-session": "^1.16.2",
+        "lowdb": "^1.0.0",
+        "web-push": "^3.4.1"
+    },
+    "engines": {
+        "node": "8.x"
+    },
+    "repository": {
+        "url": "https://glitch.com/edit/#!/codelab-notifications-push-server"
+    },
+    "license": "MIT",
+    "keywords": [
+        "node",
+        "glitch",
+        "express"
+    ],
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    }
+}
